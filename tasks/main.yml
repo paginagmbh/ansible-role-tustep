@@ -1,7 +1,7 @@
 ---
 - name: Install unzip and tcsh.
-  apt:
-    pkg: "{{ item }}"
+  package:
+    name: "{{ item }}"
   with_items:
     - unzip
     - tcsh

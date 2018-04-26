@@ -3,8 +3,4 @@
 ## Test
 
     cd tests/
-    vagrant up && vagrant ssh
-
-In the VM:
-
-    tustep
+    vagrant up && vagrant ssh -- tustep
