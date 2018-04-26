@@ -1,0 +1,25 @@
+---
+- name: Install unzip and tcsh.
+  apt:
+    pkg: "{{ item }}"
+  with_items:
+    - unzip
+    - tcsh
+
+- name: Create {{ tustep_install_dir }}.
+  file:
+    path: "{{ tustep_install_dir }}"
+    state: directory
+
+- name: Download and unarchive TUStep.
+  unarchive:
+    src: "{{ tustep_download_url }}"
+    dest: "{{ tustep_install_dir }}"
+    creates: "{{ tustep_install_dir }}/o"
+    remote_src: True
+
+- name: Install wrapper script
+  template:
+    src: "tustep.j2"
+    dest: "/usr/local/bin/tustep"
+    mode: "0755"

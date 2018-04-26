@@ -1,0 +1,4 @@
+---
+tustep_download_url: "http://www.tustep.uni-tuebingen.de/down/down/linux/tustep.zip"
+tustep_lib_dir: "/opt"
+tustep_install_dir: "{{ tustep_lib_dir }}/tustep"

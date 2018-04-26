@@ -1,0 +1,24 @@
+#!/bin/bash
+
+export TUSTEP_LIB="{{ tustep_lib_dir }}"
+export TUSTEP_MDS=BATCH
+
+export TUSTEP_1=$1
+export TUSTEP_2=$2
+export TUSTEP_3=$3
+export TUSTEP_4=$4
+export TUSTEP_5=$5
+export TUSTEP_6=$6
+export TUSTEP_7=$7
+export TUSTEP_8=$8
+export TUSTEP_9=$9
+
+export TUSTEP_DSK="${TUSTEP_DSK:-$PWD}"
+export TUSTEP_SCR="${TUSTEP_SCR:-$TUSTEP_DSK}"
+export TUSTEP_PRJ="${TUSTEP_PRJ:--}"
+export TUSTEP_MEM="${TUSTEP_MEM:-00100000}"
+
+#export TUSTEP_INI=
+#export TUSTEP_CMD=scriptname
+
+exec {{ tustep_install_dir }}/o
