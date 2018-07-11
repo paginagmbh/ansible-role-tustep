@@ -2,7 +2,7 @@
 galaxy_info:
   role_name: tustep
   author: paginagmbh
-  description: your description
+  description: TUSTEP - Text Processing Tools
   company: Pagina GmbH
   min_ansible_version: 2.4
 
@@ -16,7 +16,7 @@ galaxy_info:
         - "7"
 
   galaxy_tags:
-    - ps
+    - postscript
     - pdf
     - text
     - typesetting
