@@ -11,7 +11,7 @@
     path: "{{ tustep_install_dir }}"
     state: directory
 
-- name: Download and unarchive TUStep.
+- name: Download and unarchive TUSTEP.
   unarchive:
     src: "{{ tustep_download_url }}"
     dest: "{{ tustep_install_dir }}"

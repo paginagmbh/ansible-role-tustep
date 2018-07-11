@@ -1,2 +1,23 @@
 ---
+galaxy_info:
+  role_name: tustep
+  author: paginagmbh
+  description: your description
+  company: Pagina GmbH
+  min_ansible_version: 2.4
+
+  platforms:
+    - name: Ubuntu
+      versions:
+        - "xenial"
+        - "bionic"
+    - name: EL
+      versions:
+        - "7"
+
+  galaxy_tags:
+    - ps
+    - pdf
+    - text
+    - typesetting
 dependencies: []
