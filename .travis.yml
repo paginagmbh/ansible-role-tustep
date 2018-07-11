@@ -19,7 +19,7 @@ script:
   - ${PWD}/tests/test.sh
 
   # Check installation of wrapper script.
-  - 'which tustep'
+  - '/usr/local/bin/tustep'
 
 notifications:
   webhooks: https://galaxy.ansible.com/api/v1/notifications/
